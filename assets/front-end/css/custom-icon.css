@@ -1,0 +1,156 @@
+/*!
+ Project   : Blogasm WordPress Theme
+ Purpose   : Custom Icon Fonts
+ Author    : precisethemes
+ Theme URI : https://precisethemes.com/
+ */
+@font-face {
+    font-family: precicons;
+    src: url(../webfonts/precicons.ttf?gp2jut) format('truetype'), url(../webfonts/precicons.woff?gp2jut) format('woff'), url(../webfonts/precicons.svg?gp2jut#precicons) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+.pt-icon {
+    font-family: precicons!important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.icon-love:before {
+    content: "\e900"
+}
+
+.icon-love-alt:before {
+    content: "\e901"
+}
+
+.icon-share:before {
+    content: "\e902"
+}
+
+.icon-angle-down:before {
+    content: "\e903"
+}
+
+.icon-angle-left:before {
+    content: "\e904"
+}
+
+.icon-angle-right:before {
+    content: "\e905"
+}
+
+.icon-angle-up:before {
+    content: "\e906"
+}
+
+.icon-arrow-down:before {
+    content: "\e907"
+}
+
+.icon-arrow-left:before {
+    content: "\e908"
+}
+
+.icon-arrow-right:before {
+    content: "\e909"
+}
+
+.icon-arrow-top:before {
+    content: "\e90a"
+}
+
+.icon-article:before {
+    content: "\e90b"
+}
+
+.icon-audio:before {
+    content: "\e90c"
+}
+
+.icon-comments:before {
+    content: "\e90d"
+}
+
+.icon-cross:before {
+    content: "\e90e"
+}
+
+.icon-dots-horizontal:before {
+    content: "\e90f"
+}
+
+.icon-dots-vertical:before {
+    content: "\e910"
+}
+
+.icon-link:before {
+    content: "\e911"
+}
+
+.icon-list:before {
+    content: "\e912"
+}
+
+.icon-minus:before {
+    content: "\e913"
+}
+
+.icon-nav:before {
+    content: "\e914"
+}
+
+.icon-nav-alt:before {
+    content: "\e915"
+}
+
+.icon-plus:before {
+    content: "\e916"
+}
+
+.icon-quotes:before {
+    content: "\e917"
+}
+
+.icon-search:before {
+    content: "\e918"
+}
+
+.icon-tags:before {
+    content: "\e919"
+}
+
+.icon-user:before {
+    content: "\e91a"
+}
+
+.icon-user-alt:before {
+    content: "\e91b"
+}
+
+.icon-video:before {
+    content: "\e91c"
+}
+
+.icon-music-note-streamline:before {
+    content: "\e91d"
+}
+
+.icon-calendar-1:before {
+    content: "\e91e"
+}
+
+.icon-expand:before {
+    content: "\e91f"
+}
+
+.icon-collapse:before {
+    content: "\e920"
+}

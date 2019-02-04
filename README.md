@@ -1,2 +1,0 @@
-# blogasm
-Blogasm is a minimal, elegant, clean and responsive WordPress blog theme with a pleasing design and minimalist color combination to emphasize your blog posts. It can be used for personal, fashion, lifestyle, food, travel, photography, portfolio, technology or any other types of blog sites. Built-in One-click demo importer option helps to get started quickly. View More Details at: https://precisethemes.com/go/blogasm/ and View Demo at: https://precisethemes.com/go/blogasm-demo/
