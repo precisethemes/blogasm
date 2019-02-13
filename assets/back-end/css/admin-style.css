@@ -1,0 +1,185 @@
+/*!
+ Project   : Blogasm Pro WordPress Theme
+ Purpose   : Admin Area CSS
+ Author    : Precise Themes
+ Theme URI : https://precisethemes.com/
+ */
+
+/*--------------------------------------------------------------
+# Welcome Container
+--------------------------------------------------------------*/
+.welcome-notice {
+    padding: 40px 15px !important;
+    text-align: center;
+}
+
+.welcome-notice h1 {
+    font-size: 3em;
+}
+
+.welcome-notice p {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.welcome-notice a.button-secondary {
+    height: auto;
+    padding: 6px 20px;
+    margin-top: 40px;
+    border: 0;
+    box-shadow: none;
+    background: #46b450;
+    color: #fff;
+    font-size: 16px;
+}
+
+.welcome-notice a.button-secondary:hover {
+    background: #29292d;
+    color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Backend Welcome Page
+--------------------------------------------------------------*/
+.blogasm-welcome-container {
+    padding: 30px;
+    margin: 15px;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+}
+
+.blogasm-welcome-container::before,
+.blogasm-welcome-container::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.flex {
+    display: flex;
+}
+
+.blogasm-info-wrapper {
+    justify-content: space-between;
+}
+
+.blogasm-info-wrapper .blogasm-left-wrap,
+.blogasm-info-wrapper .blogasm-right-wrap {
+    width: calc(50% - 30px);
+}
+
+.blogasm-info-wrapper .blogasm-right-wrap img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+}
+
+.blogasm-info-wrapper h1 {
+    font-size: 3em;
+    line-height: 1.2;
+}
+
+.blogasm-info-wrapper h4 {
+    font-size: 1.5em;
+}
+
+.blogasm-info-wrapper p {
+    margin-top: 2.5em;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.blogasm-tabs-wrapper {
+    margin-top: 50px;
+}
+
+.blogasm-tabs-wrapper section {
+    border-bottom: 1px solid #ddd;
+}
+
+.blogasm-tabs-wrapper section:nth-last-of-type(1) {
+    border-bottom: 0;
+}
+
+.blogasm-welcome-tab-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.blogasm-welcome-tab-nav li {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: -1px;
+    margin-left: -5px;
+    cursor: pointer;
+    background: none;
+    color: #222;
+}
+
+.blogasm-welcome-tab-nav li:nth-of-type(1) {
+    margin-left: 0;
+}
+
+.blogasm-welcome-tab-nav li.active {
+    border-bottom-color: #f4f4f4;
+    background: #f4f4f4;
+    color: #222;
+}
+
+.blogasm-welcome-section {
+    display: none;
+    border: 1px solid #e5e5e5;
+    background: #f4f4f4;
+    padding: 15px;
+}
+
+.blogasm-welcome-section.active{
+    display: inherit;
+}
+
+.blogasm-welcome-section table {
+    border-spacing: 0;
+}
+
+.blogasm-welcome-section table tbody {
+    display: block;
+    border: 1px solid #d0d0d0;
+}
+
+.blogasm-welcome-section table tbody td {
+    border-bottom: 1px solid #d0d0d0;
+    text-align: center;
+    padding: 0 20px;
+    height: 40px;
+}
+
+.blogasm-welcome-section table tbody tr:nth-of-type(1) td {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.blogasm-welcome-section table tbody tr:nth-last-of-type(1) td {
+    border-bottom: 0;
+}
+
+.blogasm-welcome-section table tbody tr td:nth-of-type(1) {
+    text-align: left;
+    font-weight: 500;
+}
+
+.blogasm-welcome-section .dash-green {
+    color: #5ad15a;
+    font-size: 28px;
+    height: auto;
+    width: auto;
+}
+
+.blogasm-welcome-section .dash-red {
+    color: #fc6f6f;
+    font-size: 28px;
+    height: auto;
+    width: auto;
+}
+

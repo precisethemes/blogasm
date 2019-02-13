@@ -16,7 +16,7 @@ add_filter( 'kirki/config', 'blogasm_kirki_configuration' );
 /*--------------------------------------------------------------
 # Blogasm Kirki Config
 --------------------------------------------------------------*/
-Kirki::add_config( 'blogasm-pro_config', array(
+Kirki::add_config( 'blogasm_config', array(
     'capability'    => 'edit_theme_options',
     'option_type'   => 'theme_mod',
 ) );
@@ -27,7 +27,7 @@ Kirki::add_config( 'blogasm-pro_config', array(
  * @param array $args The field arguments.
  */
 function blogasm_add_field( $args ) {
-    Kirki::add_field( 'blogasm-pro_config', $args );
+    Kirki::add_field( 'blogasm_config', $args );
 }
 
 // Panels

@@ -64,73 +64,7 @@ if ( ! class_exists( 'Blogasm_Demo' ) ) {
             // OCDI additional intro text.
             add_filter( 'pt-ocdi/plugin_intro_text', array( $this, 'additional_intro_text' ) );
 
-            // OCDI before widget import
-            add_filter( 'pt-ocdi/before_widgets_import', array( $this, 'ocdi_before_widgets_import' ) );
 
-            // Reset Wizard
-            add_action( 'admin_init', array( $this, 'reset_wizard_actions' ) );
-
-        }
-
-
-        /**
-         * Reset actions when a reset button is clicked.
-         */
-        public function reset_wizard_actions() {
-            global $wpdb, $current_user;
-
-            if ( ! empty( $_GET['do_reset_wordpress'] ) ) {
-
-                require_once( ABSPATH . '/wp-admin/includes/upgrade.php' );
-
-                $template     = get_option( 'template' );
-                $blogname     = get_option( 'blogname' );
-                $admin_email  = get_option( 'admin_email' );
-                $blog_public  = get_option( 'blog_public' );
-
-                if ( $current_user->user_login != 'admin' ) {
-                    $user = get_user_by( 'login', 'admin' );
-                }
-
-                if ( empty( $user->user_level ) || $user->user_level < 10 ) {
-                    $user = $current_user;
-                }
-
-                // Drop tables.
-                $drop_tables = $wpdb->get_col( sprintf( "SHOW TABLES LIKE '%s%%'", str_replace( '_', '\_', $wpdb->prefix ) ) );
-                foreach ( $drop_tables as $table ) {
-                    $wpdb->query( "DROP TABLE IF EXISTS $table" );
-                }
-
-                // Installs the site.
-                $result = wp_install( $blogname, $user->user_login, $user->user_email, $blog_public );
-
-                // Updates the user password with a old one.
-                $wpdb->update( $wpdb->users, array( 'user_pass' => $user->user_pass, 'user_activation_key' => '' ), array( 'ID' => $result['user_id'] ) );
-
-                // Set up the Password change nag.
-                $default_password_nag = get_user_option( 'default_password_nag', $result['user_id'] );
-                if ( $default_password_nag ) {
-                    update_user_option( $result['user_id'], 'default_password_nag', false, true );
-                }
-
-                // Switch current theme.
-                $current_theme = wp_get_theme( $template );
-                if ( $current_theme->exists() ) {
-                    switch_theme( $template );
-                }
-
-                // Activate required plugins.
-                activate_plugin( 'one-click-demo-import/one-click-demo-import.php' );
-
-                // Update the cookies.
-                wp_clear_auth_cookie();
-                wp_set_auth_cookie( $result['user_id'] );
-
-                // Redirect to demo importer page to display reset success notice.
-                wp_safe_redirect( admin_url( 'themes.php?page=pt-one-click-demo-import' ) );
-                exit();
-            }
         }
 
         /**
@@ -152,54 +86,17 @@ if ( ! class_exists( 'Blogasm_Demo' ) ) {
          * @param string $intro Intro.
          * @return string Modified intro.
          */
-        public function additional_intro_text( $intro, $new_array = array() ) {
+        public function additional_intro_text( $intro ) {
 
-            $demo_activated_id  = get_option( 'blogasm_demo_install_slug' );
-            $intro_content      = isset( $this->config['intro_content'] ) ? $this->config['intro_content'] : '';
-            $demos              = isset( $this->config['ocdi'] ) ? $this->config['ocdi'] : array();
-
-            if ( ! empty( $demos ) ) {
-                foreach ( $demos as $key => $value ) {
-                    $new_array[] = $value['import_file_name'];
-                }
-            }
+            $intro_content = isset( $this->config['intro_content'] ) ? $this->config['intro_content'] : '';
 
             if ( ! empty( $intro_content ) ) {
                 $message  = '<div class="ocdi__intro-text">';
                 $message .= wp_kses_post( wpautop( $intro_content ) );
-                if ( $demo_activated_id && in_array( $demo_activated_id, array_keys( $new_array ) ) ) {
-                    $message .= sprintf(
-                    /* translators: %s: Name of current post */
-                        __( '<p class="submit"><a href="%s" class="button button-primary blogasm-reset-default">Run the Reset Wizard</a> &#8211; If you need to reset the WordPress back to default again :)<p>', 'blogasm' ),
-                        add_query_arg( 'do_reset_wordpress', 'true', esc_url( admin_url( 'themes.php?page=pt-one-click-demo-import' ) ) )
-                    );
-                }
-
                 $message .= '</div><!-- .ocdi__intro-text -->';
                 $intro   .= $message;
             }
-
             return $intro;
-        }
-
-        /**
-         * Reset active widget for sidebar
-         *
-         * @since 0.2.0
-         *
-         * @param string $intro Intro.
-         * @return string Modified intro.
-         */
-        public function ocdi_before_widgets_import() {
-
-            $sidebars_widgets = wp_get_sidebars_widgets();
-            // Reset active widgets.
-            foreach ( $sidebars_widgets as $key => $widgets ) {
-                $sidebars_widgets[ $key ] = array();
-            }
-
-            wp_set_sidebars_widgets( $sidebars_widgets );
-
         }
 
 
@@ -259,9 +156,6 @@ if ( ! class_exists( 'Blogasm_Demo' ) ) {
 
                 set_theme_mod( 'nav_menu_locations', $nav_settings );
             }
-
-            // Update option for the demo successful
-            update_option( 'blogasm_demo_install_slug', sanitize_text_field( $selected_import['import_file_name'] ) );
 
             // Update default post as draft
             $post_id = 1;

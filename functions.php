@@ -275,6 +275,16 @@ if ( !function_exists( 'blogasm_admin_scripts' ) ) {
             wp_enqueue_style( 'blogasm-customizer-style', BLOGASM_THEME_URI .'/assets/back-end/css/customizer-style' . $min . '.css', false, BLOGASM_THEME_VERSION, 'all' );
         }
 
+        if ( 'edit.php' != $hook || $hook != 'post.php' || $hook != 'post-new.php') {
+
+            // Enqueue Style
+            wp_enqueue_style( 'blogasm-admin-style', BLOGASM_THEME_URI .'/assets/back-end/css/admin-style' . $min . '.css', false, BLOGASM_THEME_VERSION, 'all' );
+
+            // Enqueue Script
+            wp_enqueue_script( 'blogasm-admin-script', BLOGASM_THEME_URI . '/assets/back-end/js/admin-script' . $min . '.js', array( 'jquery' ), BLOGASM_THEME_VERSION, true );
+
+        }
+
     }
 }
 add_action( 'admin_enqueue_scripts', 'blogasm_admin_scripts' );
@@ -321,6 +331,11 @@ require BLOGASM_THEME_DIR . '/inc/framework/meta-boxes/class-meta-box.php';
  * Include Welcome page and demo importer.
  */
 if ( is_admin() ) {
+
+    // Welcome Page.
+    require BLOGASM_THEME_DIR . '/inc/framework/welcome-screen/class-welcome-screen.php';
+    require BLOGASM_THEME_DIR . '/inc/framework/welcome-screen/persist-admin-notices-dismissal.php';
+
     // Demo.
     require BLOGASM_THEME_DIR . '/inc/framework/demo-importer/class-demo.php';
 }
