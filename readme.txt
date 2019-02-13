@@ -4,7 +4,7 @@ Contributors: Precise Themes
 Tags: two-columns, left-sidebar, right-sidebar, custom-menu, custom-logo, featured-images, footer-widgets, theme-options, custom-colors, threaded-comments, translation-ready, blog
 Requires at least: 4.7
 Tested up to: 5.0.3
-Stable tag: 1.0.0
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,15 @@ Description: Blogasm is a minimalist WordPress blog theme beautifully crafted to
     Blogasm makes us of Featured Images, which helps to visually tell your story. Featured Images are displayed below the title on the blog posts and archive pages. A smaller version of the image is used on the blog index page. For the optimal result, provide an image at least 1200px wide.
 
 == Changelog ==
+Version 1.0.3 - 2019-02-07
+* Updated Theme URL
+
+Version 1.0.2 - 2019-02-06
+* Fixed Theme URL
+
+Version 1.0.1 - 2019-02-04
+* Updated Image CC0 sources
+
 Version 1.0.0 - 2018-11-20
 * Initial release
 
@@ -53,9 +62,9 @@ Version 1.0.0 - 2018-11-20
      URL: http://opensource.org/licenses/mit-license.html
 
 3. Magnific Popup - v1.1.0 - 2016-02-20
-        http://dimsemenov.com/plugins/magnific-popup/
-        Copyright (c) 2016 Dmitry Semenov;
-        Licensed under the MIT license - http://opensource.org/licenses/MIT
+   http://dimsemenov.com/plugins/magnific-popup/
+   Copyright (c) 2016 Dmitry Semenov;
+   Licensed under the MIT license - http://opensource.org/licenses/MIT
 
 == JavaScripts ==
 1. Magnific Popup - v1.1.0 - 2016-02-20
@@ -71,17 +80,33 @@ Version 1.0.0 - 2018-11-20
 2. Google Fonts - https://fonts.google.com/
 
 == Images ==
-1. Source: https://www.pexels.com/
-   License: https://www.pexels.com/photo-license/
+1. By: Raphael Koh
+   License: CC0
+   Source: https://stocksnap.io/photo/7TL4B4UCI3
 
-2. Source: https://unsplash.com/
-   License: https://unsplash.com/license
+2. By: Sarah Dorweiler
+   License: CC0
+   Source: https://stocksnap.io/photo/YEDY5K0HYD
 
-3. Source: https://pixabay.com/
+3. By: Burst
+   License: CC0
+   Source: https://stocksnap.io/photo/OE0F9BHXJQ
+
+4. By: Rawpixel.com
+   License: CC0
+   Source: https://stocksnap.io/photo/CZBCTHILFN
+
+5. By: Sarah Dorweiler
+   License: CC0
+   Source: https://stocksnap.io/photo/UB2UXMASSW
+
+6. By: Rawpixel.com
+   License: CC0
+   Source: https://stocksnap.io/photo/R0QPZSRIIU
 
 == Plugins ==
 1. TGM-Plugin-Activation: - https://github.com/TGMPA/TGM-Plugin-Activation
-    Licensed under the GNU General Public License v2.0
+   Licensed under the GNU General Public License v2.0
 
 2. Kirki: - http://aristath.github.io/kirki/
    Licensed under the MIT license - http://opensource.org/licenses/MIT
