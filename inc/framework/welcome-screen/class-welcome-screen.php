@@ -157,7 +157,7 @@ if ( ! class_exists( 'Blogasm_Welcome_Screen' ) ) :
                         </p>
                     <?php else : ?>
                         <p style="color:#23d423;font-style:italic;font-size:14px;"><?php esc_html_e( 'Plugin installed and active!', 'blogasm' ); ?></p>
-                        <a class="button button-primary button-large" href="<?php echo esc_url( admin_url( 'themes.php?page=pt-one-click-demo-import.php' ) ); ?>"><?php esc_html_e( 'Go to the automatic importer', 'blogasm' ); ?></a>
+                        <a class="button button-primary button-large" href="<?php echo esc_url( admin_url( 'themes.php?page=pt-one-click-demo-import.php' ) ); ?>"><?php esc_html_e( 'Import Demo', 'blogasm' ); ?></a>
                     <?php endif; ?>
 
                     <br> <br>

@@ -323,7 +323,7 @@ msgid "Go to Customizer"
 msgstr ""
 
 #: inc/framework/welcome-screen/class-welcome-screen.php:160
-msgid "Go to the automatic importer"
+msgid "Import Demo"
 msgstr ""
 
 #: inc/framework/welcome-screen/class-welcome-screen.php:156
