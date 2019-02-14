@@ -101,6 +101,7 @@ if ( ! class_exists( 'Blogasm_Welcome_Screen' ) ) :
                         <li class="tab-link" data-tab="support"><?php esc_html_e( 'Support Forum', 'blogasm' ); ?></li>
                         <li class="tab-link" data-tab="changelog"><?php esc_html_e( 'Changelog', 'blogasm' ); ?></li>
                         <li class="tab-link" data-tab="free_vs_pro"><?php esc_html_e( 'Free vs Pro', 'blogasm' ); ?></li>
+                        <li class="tab-link" data-tab="upgrade_pro"><span class="dashicons dashicons-star-filled"></span><?php esc_html_e( ' Upgrade to Pro', 'blogasm' ); ?></li>
                     </ul>
 
                     <?php $this->getting_started();?>
@@ -110,6 +111,8 @@ if ( ! class_exists( 'Blogasm_Welcome_Screen' ) ) :
                     <?php $this->changelog();?>
 
                     <?php $this->free_vs_pro();?>
+
+                    <?php $this->upgrade_pro();?>
 
                     <div class="blogasm-rating-wrap">
                         <p><?php
@@ -416,6 +419,24 @@ if ( ! class_exists( 'Blogasm_Welcome_Screen' ) ) :
                 <br>
             </div>
             
+            <?php
+        }
+
+        /**
+         * Show Upgrade Pro Content.
+         */
+        public function upgrade_pro() { ?>
+
+            <div id="upgrade_pro" class="about-theme-tab flex">
+                <section>
+                    <h3><?php esc_html_e( 'Upgrade to Pro', 'blogasm' ); ?></h3>
+
+                    <p><?php esc_html_e( 'Need help to upgrade your website with Blogasm Pro theme for more exciting features and additional theme options.', 'blogasm' ); ?></p>
+
+                    <p><a class="button button-primary button-large" href="<?php echo esc_url( 'https://precisethemes.com/wordpress-theme/blogasm-pro/' ); ?>" target="_blank"><?php esc_html_e( 'Upgrade to Pro', 'blogasm' ); ?></a></p>
+
+                </section>
+            </div>
             <?php
         }
 

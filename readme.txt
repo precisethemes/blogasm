@@ -27,21 +27,6 @@ Description: Blogasm is a minimalist WordPress blog theme beautifully crafted to
 = Does Blogasm use featured images? =
     Blogasm makes us of Featured Images, which helps to visually tell your story. Featured Images are displayed below the title on the blog posts and archive pages. A smaller version of the image is used on the blog index page. For the optimal result, provide an image at least 1200px wide.
 
-== Changelog ==
-Version 1.0.4 - 2019-02-14
-* Added getting started page
-
-Version 1.0.3 - 2019-02-07
-* Updated Theme URL
-
-Version 1.0.2 - 2019-02-06
-* Fixed Theme URL
-
-Version 1.0.1 - 2019-02-04
-* Updated Image CC0 sources
-
-Version 1.0.0 - 2018-11-20
-* Initial release
 
 == Resources  ==
 * Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
@@ -113,3 +98,20 @@ Version 1.0.0 - 2018-11-20
 
 2. Kirki: - http://aristath.github.io/kirki/
    Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+
+== Changelog ==
+Version 1.0.4 - 2019-02-14
+* Added getting started page
+
+Version 1.0.3 - 2019-02-07
+* Updated Theme URL
+
+Version 1.0.2 - 2019-02-06
+* Fixed Theme URL
+
+Version 1.0.1 - 2019-02-04
+* Updated Image CC0 sources
+
+Version 1.0.0 - 2018-11-20
+* Initial release
