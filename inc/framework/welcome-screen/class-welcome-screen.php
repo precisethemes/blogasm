@@ -138,7 +138,7 @@ if ( ! class_exists( 'Blogasm_Welcome_Screen' ) ) :
                 <section>
                     <h3><?php esc_html_e( 'Support Forum', 'blogasm' ); ?></h3>
 
-                    <p><?php esc_html_e( 'Need help to setup your website with Atento theme? Visit our support forum and browse support topics or create new, one of our support member will follow and help you to solver your issue.', 'blogasm' ); ?></p>
+                    <p><?php esc_html_e( 'Need help to setup your website with Blogasm theme? Visit our support forum and browse support topics or create new, one of our support member will follow and help you to solver your issue.', 'blogasm' ); ?></p>
 
                     <p><a class="button button-primary button-large" href="<?php echo esc_url( 'https://precisethemes.com/support-forum/forum/blogasm/' ); ?>" target="_blank"><?php esc_html_e( 'Support Forum', 'blogasm' ); ?></a></p>
                 </section>
@@ -184,7 +184,7 @@ if ( ! class_exists( 'Blogasm_Welcome_Screen' ) ) :
                 <section>
                     <h3><?php esc_html_e( 'Support Forum', 'blogasm' ); ?></h3>
 
-                    <p><?php esc_html_e( 'Need help to setup your website with Atento theme? Visit our support forum and browse support topics or create new, one of our support member will follow and help you to solver your issue.', 'blogasm' ); ?></p>
+                    <p><?php esc_html_e( 'Need help to setup your website with Blogasm theme? Visit our support forum and browse support topics or create new, one of our support member will follow and help you to solver your issue.', 'blogasm' ); ?></p>
 
                     <p><a class="button button-primary button-large" href="<?php echo esc_url( 'https://precisethemes.com/support-forum/forum/blogasm/' ); ?>" target="_blank"><?php esc_html_e( 'Visit Support Forum', 'blogasm' ); ?></a></p>
                 </section>
