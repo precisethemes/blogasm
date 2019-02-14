@@ -101,7 +101,7 @@ if ( ! class_exists( 'Blogasm_Welcome_Screen' ) ) :
                         <li class="tab-link" data-tab="support"><?php esc_html_e( 'Support Forum', 'blogasm' ); ?></li>
                         <li class="tab-link" data-tab="changelog"><?php esc_html_e( 'Changelog', 'blogasm' ); ?></li>
                         <li class="tab-link" data-tab="free_vs_pro"><?php esc_html_e( 'Free vs Pro', 'blogasm' ); ?></li>
-                        <li class="tab-link" data-tab="upgrade_pro"><span class="dashicons dashicons-star-filled"></span><?php esc_html_e( ' Upgrade to Pro', 'blogasm' ); ?></li>
+                        <li class="tab-link" data-tab="upgrade_pro"><?php esc_html_e( ' Upgrade to Pro', 'blogasm' ); ?></li>
                     </ul>
 
                     <?php $this->getting_started();?>
@@ -427,7 +427,7 @@ if ( ! class_exists( 'Blogasm_Welcome_Screen' ) ) :
          */
         public function upgrade_pro() { ?>
 
-            <div id="upgrade_pro" class="about-theme-tab flex">
+            <div id="upgrade_pro" class="blogasm-welcome-section">
                 <section>
                     <h3><?php esc_html_e( 'Upgrade to Pro', 'blogasm' ); ?></h3>
 
