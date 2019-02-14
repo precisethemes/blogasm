@@ -176,6 +176,11 @@
     width: 92%;
 }
 
+#accordion-section-custom_theme_upsell {
+    display: block !important;
+    height: 48px !important;
+}
+
 /* Kirk Customization
 ----------------------------------*/
 .customize-control-kirki-radio-image label {

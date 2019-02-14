@@ -98,7 +98,7 @@ if ( ! class_exists( 'Blogasm_Welcome_Screen' ) ) :
                 <div class="blogasm-tabs-wrapper">
                     <ul class="blogasm-welcome-tab-nav">
                         <li class="tab-link" data-tab="getting_started"><?php esc_html_e( 'Getting Started', 'blogasm' ); ?></li>
-                        <li class="tab-link" data-tab="support"><?php esc_html_e( 'Submit Ticket', 'blogasm' ); ?></li>
+                        <li class="tab-link" data-tab="support"><?php esc_html_e( 'Support Forum', 'blogasm' ); ?></li>
                         <li class="tab-link" data-tab="changelog"><?php esc_html_e( 'Changelog', 'blogasm' ); ?></li>
                         <li class="tab-link" data-tab="free_vs_pro"><?php esc_html_e( 'Free vs Pro', 'blogasm' ); ?></li>
                     </ul>

@@ -50,6 +50,92 @@ function blogasm_customize_register( $wp_customize ) {
     $wp_customize->remove_control( 'display_header_text' );
     $wp_customize->remove_control( 'header_textcolor' );
 
+    /**
+     * Upsell customizer section.
+     *
+     * @since  1.0.4
+     * @access public
+     */
+    class Blogasm_Upsell_Section extends WP_Customize_Section {
+
+        /**
+         * The type of customize section being rendered.
+         *
+         * @since  1.0.4
+         * @access public
+         * @var    string
+         */
+        public $type = 'upsell';
+
+        /**
+         * Custom button text to output.
+         *
+         * @since  1.0.4
+         * @access public
+         * @var    string
+         */
+        public $pro_text = '';
+
+        /**
+         * Custom pro button URL.
+         *
+         * @since  1.0.4
+         * @access public
+         * @var    string
+         */
+        public $pro_url = '';
+
+        /**
+         * Add custom parameters to pass to the JS via JSON.
+         *
+         * @since  1.0.4
+         * @access public
+         * @return void
+         */
+        public function json() {
+            $json = parent::json();
+
+            $json['pro_text'] = $this->pro_text;
+            $json['pro_url']  = esc_url( $this->pro_url );
+
+            return $json;
+        }
+
+        /**
+         * Outputs the Underscore.js template.
+         *
+         * @since  1.0.4
+         * @access public
+         * @return void
+         */
+        protected function render_template() { ?>
+
+            <li id="accordion-section-{{ data.id }}" class="accordion-section control-section control-section-{{ data.type }} cannot-expand">
+                <h3 class="accordion-section-title" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 10px 10px 20px; background: #dce6f6 !important;">
+                    {{ data.title }}
+
+                    <# if ( data.pro_text && data.pro_url ) { #>
+                    <a href="{{ data.pro_url }}" class="button button-primary alignright" target="_blank">{{ data.pro_text }}</a>
+                    <# } #>
+                </h3>
+            </li>
+        <?php }
+    }
+
+    $wp_customize->register_section_type( 'Blogasm_Upsell_Section' );
+
+    // Upsell section.
+    $wp_customize->add_section(
+        new Blogasm_Upsell_Section( $wp_customize, 'custom_theme_upsell',
+            array(
+                'title'    => esc_html__( 'Need More Options?', 'blogasm' ),
+                'pro_text' => esc_html__( 'Buy PRO Version', 'blogasm' ),
+                'pro_url'  => esc_url( 'https://precisethemes.com/wordpress-theme/blogasm-pro/' ),
+                'priority' => 1,
+            )
+        )
+    );
+
     if ( isset( $wp_customize->selective_refresh ) ) {
         $wp_customize->selective_refresh->add_partial( 'blogname', array(
             'selector'        => '.site-title a',
