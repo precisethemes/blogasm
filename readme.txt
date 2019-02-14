@@ -4,7 +4,7 @@ Contributors: Precise Themes
 Tags: two-columns, left-sidebar, right-sidebar, custom-menu, custom-logo, featured-images, footer-widgets, theme-options, custom-colors, threaded-comments, translation-ready, blog
 Requires at least: 4.7
 Tested up to: 5.0.3
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,9 @@ Description: Blogasm is a minimalist WordPress blog theme beautifully crafted to
     Blogasm makes us of Featured Images, which helps to visually tell your story. Featured Images are displayed below the title on the blog posts and archive pages. A smaller version of the image is used on the blog index page. For the optimal result, provide an image at least 1200px wide.
 
 == Changelog ==
+Version 1.0.4 - 2019-02-14
+* Added getting started page
+
 Version 1.0.3 - 2019-02-07
 * Updated Theme URL
 
