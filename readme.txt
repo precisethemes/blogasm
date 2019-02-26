@@ -4,7 +4,7 @@ Contributors: Precise Themes
 Tags: two-columns, left-sidebar, right-sidebar, custom-menu, custom-logo, featured-images, footer-widgets, theme-options, custom-colors, threaded-comments, translation-ready, blog
 Requires at least: 4.7
 Tested up to: 5.0.3
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -106,6 +106,9 @@ Description: Blogasm is a minimalist WordPress blog theme beautifully crafted to
 
 
 == Changelog ==
+Version 1.0.6 - 2018-02-26
+* Fixed featured image display for archive page with static home page
+
 Version 1.0.5 - 2019-02-17
 * Updated Screenshot
 
