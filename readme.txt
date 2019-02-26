@@ -4,7 +4,7 @@ Contributors: Precise Themes
 Tags: two-columns, left-sidebar, right-sidebar, custom-menu, custom-logo, featured-images, footer-widgets, theme-options, custom-colors, threaded-comments, translation-ready, blog
 Requires at least: 4.7
 Tested up to: 5.0.3
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,7 @@ Description: Blogasm is a minimalist WordPress blog theme beautifully crafted to
 
 == Resources  ==
 * Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+
 
 == CSS ==
 1. Bootstrap (https://getbootstrap.com/)
@@ -60,37 +61,41 @@ Description: Blogasm is a minimalist WordPress blog theme beautifully crafted to
    Copyright (c) 2016 Dmitry Semenov;
    Licensed under the MIT license - http://opensource.org/licenses/MIT
 
+
 == Fonts ==
 1. Font Awesome: - http://fontawesome.io/
    Licensed under the MIT license - http://opensource.org/licenses/MIT
    Font Awesome by Dave Gandy - http://fontawesome.io
 
+
 2. Google Fonts - https://fonts.google.com/
 
+
 == Images ==
-1. By: Raphael Koh
+1. By: Lucas Allmann
    License: CC0
-   Source: https://stocksnap.io/photo/7TL4B4UCI3
+   Source: https://stocksnap.io/photo/DE3NRX2TIF
 
-2. By: Sarah Dorweiler
+2. By: Bruce Mars
    License: CC0
-   Source: https://stocksnap.io/photo/YEDY5K0HYD
+   Source: https://stocksnap.io/photo/XFKXERMNY6
 
-3. By: Burst
+3. By: Christopher Campbell
    License: CC0
-   Source: https://stocksnap.io/photo/OE0F9BHXJQ
+   Source: https://stocksnap.io/photo/KZWJEPAZOC
 
-4. By: Rawpixel.com
+4. By: Christopher Campbell
    License: CC0
-   Source: https://stocksnap.io/photo/CZBCTHILFN
+   Source: https://stocksnap.io/photo/X4X4A8SLZJ
 
-5. By: Sarah Dorweiler
+5. By: Matthew Kane
    License: CC0
-   Source: https://stocksnap.io/photo/UB2UXMASSW
+   Source: https://stocksnap.io/photo/CWDQVX4UZZ
 
-6. By: Rawpixel.com
+6. By: The Lazy Artist Gallery
    License: CC0
-   Source: https://stocksnap.io/photo/R0QPZSRIIU
+   Source: https://stocksnap.io/photo/TRD18MXN0R
+
 
 == Plugins ==
 1. TGM-Plugin-Activation: - https://github.com/TGMPA/TGM-Plugin-Activation
@@ -101,6 +106,9 @@ Description: Blogasm is a minimalist WordPress blog theme beautifully crafted to
 
 
 == Changelog ==
+Version 1.0.5 - 2019-02-17
+* Updated Screenshot
+
 Version 1.0.4 - 2019-02-14
 * Added getting started page
 

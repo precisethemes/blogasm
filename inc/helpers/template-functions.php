@@ -66,7 +66,7 @@ if ( ! function_exists( 'blogasm_get_the_ID' ) ) {
         $id = get_the_ID();
 
         // Blog Page
-        if ( is_home() && $page_for_posts = get_option( 'page_for_posts' ) ) {
+        if ( is_home() && !is_front_page() && $page_for_posts = get_option( 'page_for_posts' ) ) {
             $id = $page_for_posts;
         }
 

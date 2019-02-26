@@ -6,24 +6,22 @@
  *
  * @package Blogasm
  */
-
+global $post;
 $header_class               = array( 'entry-header d-flex flex-wrap' );
 $header_element_class       = array( 'header-elements entry-header d-flex flex-wrap align-items-center' );
 $header_element_class[]     = 'text-left';
-$featured_img_meta_value    = get_post_meta( blogasm_get_the_ID(), 'blogasm_featured_img_type', true );
+$featured_img_meta_value    = get_post_meta( $post->ID, 'blogasm_featured_img_type', true );
 $featured_img_type          = !empty( $featured_img_meta_value ) ? $featured_img_meta_value : 'portrait-img';
 
 if ( $featured_img_type == 'landscape-img' ) {
 
 	$thumbnail_size = 'blogasm-1370-850';
 	$header_element_class[] = 'w-100';
-	$excerpt_length = $excerpt_length_landscape;
 
 } elseif ( $featured_img_type == 'full-width-img' ) {
 
 	$thumbnail_size = 'blogasm-1800-540';
 	$header_element_class[] = 'w-100';
-	$excerpt_length = $excerpt_length_landscape;
 
 } elseif ($featured_img_type == 'portrait-img') {
 

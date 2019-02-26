@@ -27,7 +27,7 @@ while ( have_posts() ) : the_post(); ?>
             <div class="<?php echo esc_attr( implode( ' ', $row_class ) ); ?>">
 
                 <?php
-                $featured_img_meta_value    = get_post_meta( blogasm_get_the_ID(), 'blogasm_featured_img_type', true );
+                $featured_img_meta_value    = get_post_meta( get_the_ID(), 'blogasm_featured_img_type', true );
                 $featured_img_type          = !empty( $featured_img_meta_value ) ? $featured_img_meta_value : 'portrait-img';
                 if ( $featured_img_type == 'full-width-img' ) : ?>
 

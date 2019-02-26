@@ -6,11 +6,12 @@
  *
  * @package Blogasm
  */
+global $post;
 $header_elements            = get_theme_mod( 'blogasm_post_content_header_elements_order', array( 'posted-date', 'post-author', 'post-cats', 'post-title', 'post-subtitle' ) );
 $header_class               = array( 'entry-header d-flex flex-wrap' );
 $header_element_class       = array( 'header-elements entry-header d-flex flex-wrap align-items-center' );
 $header_element_class[]     = 'text-left';
-$featured_img_meta_value    = get_post_meta( blogasm_get_the_ID(), 'blogasm_featured_img_type', true );
+$featured_img_meta_value    = get_post_meta( $post->ID, 'blogasm_featured_img_type', true );
 $featured_img_type          = !empty( $featured_img_meta_value ) ? $featured_img_meta_value : 'portrait-img';
 
 if ( $featured_img_type == 'landscape-img' ) {

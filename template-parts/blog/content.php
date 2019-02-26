@@ -6,9 +6,9 @@
  *
  * @package Blogasm
  */
-
+global $post;
 $url_link                       = blogasm_get_permalink();
-$featured_img_meta_value        = get_post_meta( blogasm_get_the_ID(), 'blogasm_featured_img_type', true );
+$featured_img_meta_value        = get_post_meta( $post->ID, 'blogasm_featured_img_type', true );
 $featured_img_type              = !empty( $featured_img_meta_value ) ? $featured_img_meta_value : 'portrait-img';
 
 $excerpt_length                 = 22;
@@ -33,7 +33,11 @@ $figure_class[]  = 'zoom-in';
 
 if ( !has_post_thumbnail() ) {
     $figure_class[]  = 'no-featured-img';
-} ?>
+}
+
+
+
+?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( $post_class ); ?>>
     <div class="post-content-wrap">

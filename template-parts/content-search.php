@@ -6,9 +6,9 @@
  *
  * @package Blogasm
  */
-
+global $post;
 $url_link                       = blogasm_get_permalink();
-$featured_img_meta_value        = get_post_meta( blogasm_get_the_ID(), 'blogasm_featured_img_type', true );
+$featured_img_meta_value        = get_post_meta( $post->ID, 'blogasm_featured_img_type', true );
 $featured_img_type              = !empty( $featured_img_meta_value ) ? $featured_img_meta_value : 'portrait-img';
 $excerpt_length                 = 20;
 $post_class                     = array( 'post-col w-100' );
