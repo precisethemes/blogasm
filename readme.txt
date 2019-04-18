@@ -106,6 +106,9 @@ Description: Blogasm is a minimalist WordPress blog theme beautifully crafted to
 
 
 == Changelog ==
+Version 1.0.7 - 2019-04-18
+* Fixed theme switcher option on customizer
+
 Version 1.0.6 - 2018-02-26
 * Fixed featured image display for archive page with static home page
 
