@@ -106,6 +106,13 @@ Description: Blogasm is a minimalist WordPress blog theme beautifully crafted to
 
 
 == Changelog ==
+Version 1.0.8 - 2020-02-08
+* Added `wp_body_open` function to support WordPress 5.2 `wp_body_open` hook.
+* Fixed `skip-link` to content area.
+* Fixed keyboard accessibility.
+* Tweak deprecate demo importer files through theme.
+* Tweak deprecate TGM plugin activation.
+
 Version 1.0.7 - 2019-04-18
 * Fixed theme switcher option on customizer
 

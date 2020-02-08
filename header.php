@@ -24,7 +24,11 @@ $header_class[] = 'transition-5s'; ?>
 </head>
 
 <body <?php body_class(); ?>>
+
+<?php wp_body_open(); ?>
+
 <div id="page" class="site website-container">
+
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'blogasm' ); ?></a>
 
     <header id="masthead" class="<?php echo esc_attr( implode( ' ', $header_class ) ); ?>">

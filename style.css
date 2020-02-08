@@ -4,7 +4,7 @@ Theme URI: https://precisethemes.com/wordpress-theme/blogasm/
 Author: Precise Themes
 Author URI: https://precisethemes.com/
 Description: Blogasm is a minimal, elegant, clean and responsive WordPress blog theme with a pleasing design and minimalist color combination to emphasize your blog posts. It can be used for personal, fashion, lifestyle, food, travel, photography, portfolio, technology or any other types of blog sites. Built-in One-click demo importer option helps to get started quickly. View More Details at: https://precisethemes.com/go/blogasm/ and View Demo at: https://precisethemes.com/go/blogasm-demo/
-Version: 1.0.7
+Version: 1.0.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: blogasm
@@ -497,6 +497,39 @@ a:hover, a:active {
 /* Do not show the outline on the skip link target. */
 #content[tabindex="-1"]:focus {
     outline: 0;
+}
+
+.skip-link {
+	position: absolute;
+	top:-100px;
+
+	/* Styled to match the default WordPress screen reader text */
+	background-color: #f1f1f1;
+	-webkit-box-shadow:0 0 2px 2px rgba(0,0,0,.6);
+	box-shadow:0 0 2px 2px rgba(0,0,0,.6);
+	color: #21759b;
+	display: block;
+	font-family: "Open Sans",sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	height: auto;
+	left:6px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+
+	-webkit-transition: top .75s ease-out;
+	transition: top .75s ease-out;
+}
+
+.skip-link:focus {
+	color: #21759b;
+	top: 7px;
+
+	-webkit-transition: top 0s;
+	transition: top 0s;
 }
 
 /*--------------------------------------------------------------
