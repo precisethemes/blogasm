@@ -444,11 +444,11 @@ a:hover, a:focus, a:active {
 }
 
 a:focus {
-    outline: none;
+	outline: thin dotted;
 }
 
 a:hover, a:active {
-    outline: none;
+    outline: 0;
 }
 
 /*--------------------------------------------------------------
@@ -962,13 +962,6 @@ video {
 }
 
 /*
-  Outline
-----------------------------------*/
-.outline-none {
-    outline: none;
-}
-
-/*
   List Style
 ----------------------------------*/
 .ls-none {
@@ -1157,7 +1150,7 @@ video {
     border-bottom: 1px solid #333;
     border-radius: 0;
     font-size: 14px;
-    outline: none;
+    /*outline: none;*/
     color: #000;
     background-color: transparent;
 }
@@ -1441,7 +1434,8 @@ ul.primary-menu li.menu-item-has-children li.menu-item-has-children {
         overflow: hidden;
     }
 
-    ul.primary-menu li.menu-item-has-children:hover > ul.sub-menu {
+	ul.primary-menu li.menu-item-has-children:hover > ul.sub-menu,
+	ul.primary-menu li.menu-item-has-children:focus-within > ul.sub-menu {
         max-height: 500px;
         -webkit-transition: max-height 0.75s ease-in;
         -o-transition: max-height 0.75s ease-in;
@@ -1469,7 +1463,7 @@ ul.primary-menu li {
 ul.primary-menu li a {
     display: block;
     text-decoration: none;
-    outline: none;
+    /*outline: none;*/
     -webkit-transition: color .5s;
     -o-transition: color .5s;
     transition: color .5s;
@@ -1516,7 +1510,8 @@ ul.primary-menu li a {
     }
 }
 
-ul.primary-menu li:hover > ul {
+ul.primary-menu li:hover > ul,
+ul.primary-menu li:focus-within > ul {
     top: 100%;
     visibility: visible;
     opacity: 1;
@@ -1535,7 +1530,8 @@ ul.primary-menu li li ul {
     left: 100%;
 }
 
-ul.primary-menu li li:hover > ul {
+ul.primary-menu li li:hover > ul,
+ul.primary-menu li li:focus-within > ul {
     top: -1px;
 }
 
